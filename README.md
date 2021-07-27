@@ -4,7 +4,9 @@ Alignment-free structure prediction using protein language models
 # Installation
 
 Clone the repository and additionally download and unpack the ProtT5 language model and ProtT5dst model snapshots:
+
 https://rostlab.org/~conpred/ProtT5dst/models/ProtT5_snapshot.tar.bz2
+
 https://rostlab.org/~conpred/ProtT5dst/models/ProtT5dst_snapshot.tar.bz2
 
 # Usage
@@ -18,6 +20,7 @@ If you run out of GPU memory and/or want to compute predictions for long protein
 
 # Authors
 Konstantin Weißenow, Michael Heinzinger, Burkhard Rost
+
 Technical University Munich
 
 # References
