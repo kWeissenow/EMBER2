@@ -5,10 +5,10 @@ Alignment-free structure prediction using protein language models
 
 The prediction pipeline uses Python3 and requires the following modules:
 
-`numpy
-matplotlib
-torch (1.9.0 recommended)
-transformers (4.6.0 recommended)`
+* numpy
+* matplotlib
+* torch (1.9.0 recommended)
+* transformers (4.6.0 recommended)
 
 # Installation
 
