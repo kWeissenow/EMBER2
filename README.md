@@ -5,9 +5,9 @@ Alignment-free structure prediction using protein language models
 
 Clone the repository and additionally download and unpack the ProtT5 language model and ProtT5dst model snapshots:
 
-https://rostlab.org/~conpred/ProtT5dst/models/ProtT5_snapshot.tar.bz2
+https://rostlab.org/~conpred/ProtT5dst/models/ProtT5_snapshot.tar.bz2 (3.6 GB)
 
-https://rostlab.org/~conpred/ProtT5dst/models/ProtT5dst_snapshot.tar.bz2
+https://rostlab.org/~conpred/ProtT5dst/models/ProtT5dst_snapshot.tar.bz2 (24.0 MB)
 
 # Usage
 
