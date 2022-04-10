@@ -1,5 +1,5 @@
 ##################################
-# ProtT5dst
+# EMBER2
 # Inference pipeline for 2D structure prediction using language models
 #
 # Authors: Konstantin Weißenow, Michael Heinzinger
@@ -74,14 +74,6 @@ class DeepDilated(nn.Module):
 
         self.output_batchnorm = nn.BatchNorm2d(block_width)
         self.output_convolution = nn.Conv2d(block_width, out_channels, kernel_size=1, stride=1, bias=True)
-
-    def initialize_weights(self):
-        for m in self.modules():
-            if isinstance(m, nn.Conv2d) or isinstance(m, nn.Conv1d):
-                nn.init.kaiming_normal_(m.weight, mode='fan_out', nonlinearity='relu')
-            elif isinstance(m, nn.BatchNorm2d) or isinstance(m, nn.BatchNorm1d):
-                nn.init.constant_(m.weight, 1)
-                nn.init.constant_(m.bias, 0)
 
     def forward(self, input_2d, input_1d):
         intermediate = self.inputCompression2d(input_2d)
