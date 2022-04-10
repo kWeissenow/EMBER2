@@ -1,4 +1,4 @@
-# ProtT5dst
+# EMBER2
 Alignment-free structure prediction using protein language models
 
 # Requirements
@@ -12,11 +12,11 @@ The prediction pipeline uses Python3 and requires the following modules:
 
 # Installation
 
-Clone the repository and additionally download and unpack the ProtT5 language model and ProtT5dst model snapshots:
+Clone the repository and additionally download and unpack the ProtT5 language model and EMBER2 model snapshots:
 
-https://rostlab.org/~conpred/ProtT5dst/models/ProtT5_snapshot.tar.bz2 (3.6 GB)
+https://rostlab.org/~conpred/EMBER2/models/ProtT5_snapshot.tar.bz2 (3.6 GB)
 
-https://rostlab.org/~conpred/ProtT5dst/models/ProtT5dst_snapshot.tar.bz2 (24.0 MB)
+https://rostlab.org/~conpred/EMBER2/models/EMBER2_snapshot.tar.bz2 (24.0 MB)
 
 # Usage
 
