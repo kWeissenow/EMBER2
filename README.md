@@ -27,6 +27,10 @@ For a FASTA file containing one or more protein sequences and an output director
 You can trade speed with prediction quality by modifying the cropping stride used during inference (default: 16) with the `--stride` parameter (see publication for details).
 If you run out of GPU memory and/or want to compute predictions for long protein sequences, you might want to lower the default batch-size of 200 with the `--batch_size` parameter.
 
+# Predictions for human proteome (<3000)
+
+Predictions for all human proteins smaller than 3000 residues are available at [EMBER2_human](https://github.com/kWeissenow/EMBER2_human).
+
 # Authors
 Konstantin Weißenow, Michael Heinzinger, Burkhard Rost
 
