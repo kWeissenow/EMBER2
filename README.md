@@ -10,6 +10,8 @@ The prediction pipeline uses Python3 and requires the following modules:
 * torch (1.9.0 recommended)
 * transformers (4.6.0 recommended)
 
+The adapted [trRosetta](https://github.com/gjoni/trRosetta) folding pipeline additionally requires pyRosetta to be installed.
+
 # Installation
 
 Clone the repository and additionally download and unpack the ProtT5 language model and EMBER2 model snapshots:
@@ -26,6 +28,13 @@ For a FASTA file containing one or more protein sequences and an output director
 
 You can trade speed with prediction quality by modifying the cropping stride used during inference (default: 16) with the `--stride` parameter (see publication for details).
 If you run out of GPU memory and/or want to compute predictions for long protein sequences, you might want to lower the default batch-size of 200 with the `--batch_size` parameter.
+
+You can create a PDB structure from a predicted distogram using the adapted trRosetta folding scripts in the 'folding' directory:
+
+`python trRosetta.py -m 0 -pd 0.05 <distogram_file> <FASTA_file> output.pdb`
+
+Please note that the FASTA file for the folding script should only contain a single sequence corresponding to the distogram.
+It is recommended to create multiple decoys with different cutoffs (-pd between 0.05 and 0.5]) and modes (-m {0,1,2}). Please refer to [trRosetta](https://github.com/gjoni/trRosetta) for additional details on the folding pipeline.
 
 # Predictions for human proteome (<3000)
 
