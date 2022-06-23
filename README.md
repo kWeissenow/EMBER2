@@ -14,17 +14,19 @@ The adapted [trRosetta](https://github.com/gjoni/trRosetta) folding pipeline add
 
 # Installation
 
-Clone the repository and additionally download and unpack the ProtT5 language model and EMBER2 model snapshots:
-
-https://rostlab.org/~conpred/EMBER2/models/ProtT5_snapshot.tar.bz2 (3.6 GB)
+Clone the repository and additionally download and unpack the EMBER2 model snapshot:
 
 https://rostlab.org/~conpred/EMBER2/models/EMBER2_snapshot.tar.bz2 (24.0 MB)
+
+The ProtT5 protein language model will be downloaded automatically.
 
 # Usage
 
 For a FASTA file containing one or more protein sequences and an output directory of your choice (must already exist), run the pipeline via
 
-`python predict.py -i <FASTA_file> -o <output_directory> --t5_model <ProtT5_directory> --dst_model <ProtT5dst_directory>`
+`python predict.py -i <FASTA_file> -o <output_directory>`
+
+The ProtT5 model will be downloaded on first use and stored by default in directory 'ProtT5-XL-U50'. You can change this directory with the '--t5_model' parameter.
 
 You can trade speed with prediction quality by modifying the cropping stride used during inference (default: 16) with the `--stride` parameter (see publication for details).
 If you run out of GPU memory and/or want to compute predictions for long protein sequences, you might want to lower the default batch-size of 200 with the `--batch_size` parameter.
