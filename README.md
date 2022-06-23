@@ -20,7 +20,7 @@ The ProtT5 protein language model will be downloaded automatically on first use.
 
 # Usage
 
-For a FASTA file containing one or more protein sequences and an output directory of your choice (must already exist), run the pipeline via
+For a FASTA file containing one or more protein sequences and an output directory of your choice, run the pipeline via
 
 `python predict.py -i <FASTA_file> -o <output_directory>`
 
