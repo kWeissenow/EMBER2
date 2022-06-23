@@ -34,7 +34,7 @@ You can create a PDB structure from a predicted distogram using the adapted trRo
 `python trRosetta.py -m 0 -pd 0.05 <distogram_file> <FASTA_file> output.pdb`
 
 Please note that the FASTA file for the folding script should only contain a single sequence corresponding to the distogram.
-It is recommended to create multiple decoys with different cutoffs (-pd between 0.05 and 0.5]) and modes (-m {0,1,2}). Please refer to [trRosetta](https://github.com/gjoni/trRosetta) for additional details on the folding pipeline.
+It is recommended to create multiple decoys with different cutoffs (-pd [0.05, 0.5]) and modes (-m {0,1,2}). Please refer to [trRosetta](https://github.com/gjoni/trRosetta) for additional details on the folding pipeline.
 
 # Predictions for human proteome (<3000)
 
