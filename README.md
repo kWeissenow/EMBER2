@@ -14,11 +14,9 @@ The adapted [trRosetta](https://github.com/gjoni/trRosetta) folding pipeline add
 
 # Installation
 
-Clone the repository and additionally download and unpack the EMBER2 model snapshot:
+Clone the repository and install the dependencies listed above.
 
-https://rostlab.org/~conpred/EMBER2/models/EMBER2_snapshot.tar.bz2 (24.0 MB)
-
-The ProtT5 protein language model will be downloaded automatically.
+The ProtT5 protein language model will be downloaded automatically on first use.
 
 # Usage
 
