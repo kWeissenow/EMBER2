@@ -24,7 +24,7 @@ For a FASTA file containing one or more protein sequences and an output director
 
 `python predict.py -i <FASTA_file> -o <output_directory>`
 
-The ProtT5 model will be downloaded on first use and stored by default in the directory 'ProtT5-XL-U50'. You can change this directory with the '--t5_model' parameter.
+The ProtT5 model will be downloaded on first use and stored by default in the directory 'ProtT5-XL-U50'. You can change this directory with the `--t5_model` parameter.
 
 You can trade speed with prediction quality by modifying the cropping stride used during inference (default: 16) with the `--stride` parameter (see publication for details).
 If you run out of GPU memory and/or want to compute predictions for long protein sequences, you might want to lower the default batch-size of 200 with the `--batch_size` parameter.
