@@ -1,4 +1,6 @@
 # EMBER2
+![EMBER](https://rostlab.org/~conpred/EMBER_sketch_small.png "EMBER")
+
 Alignment-free structure prediction using protein language models
 
 # Requirements
